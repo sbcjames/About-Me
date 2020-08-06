@@ -10,16 +10,15 @@ newName()
 function playGame(){
   var wantToPlayAGame = prompt('Do you want to play a game ' + askName + '?' + ' Please answer yes or no.');
   console.log('Do you want to play a game' + wantToPlayAGame + '?' + 'Please answer yes or no');
+  if(wantToPlayAGame.toLowerCase() === 'yes' || wantToPlayAGame === 'y'){
+    alert('Awesome, let me ask you a few questions!');
+  }else if(wantToPlayAGame.toLowerCase() === 'no' || wantToPlayAGame === 'n'){
+    alert('Ok, I will just ask a few questions.');
+  } else {
+    alert('Please enter yes or no');
+  }
 }
 playGame()
-
-if(wantToPlayAGame.toLowerCase() === 'yes' || wantToPlayAGame === 'y'){
-  alert('Awesome, let me ask you a few questions!');
-}else if(wantToPlayAGame.toLowerCase() === 'no' || wantToPlayAGame === 'n'){
-  alert('Ok, I will just ask a few questions.');
-} else {
-  alert('Please enter yes or no');
-}
 
 var famousRelative = prompt('Is James Swift related to Taylor Swift?');
 console.log('Famous relative question' + famousRelative + '?');
