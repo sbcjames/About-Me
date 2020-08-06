@@ -1,13 +1,17 @@
 'use strict';
 
-function newName(){
+// function newName(){
+//   var askName =prompt('What is your name?');
+//   console.log('Getting user name ' + askName);
+//   alert('Welcome ' + askName + ', so nice you joined me today!');
+//   return askName;
+// }
+
+
+function playGame(){
   var askName =prompt('What is your name?');
   console.log('Getting user name ' + askName);
   alert('Welcome ' + askName + ', so nice you joined me today!');
-}
-newName()
-
-function playGame(){
   var wantToPlayAGame = prompt('Do you want to play a game ' + askName + '?' + ' Please answer yes or no.');
   console.log('Do you want to play a game' + wantToPlayAGame + '?' + 'Please answer yes or no');
   if(wantToPlayAGame.toLowerCase() === 'yes' || wantToPlayAGame === 'y'){
