@@ -7,8 +7,11 @@ function newName(){
 }
 newName()
 
-var wantToPlayAGame = prompt('Do you want to play a game ' + askName + '?' + ' Please answer yes or no.');
-console.log('Do you want to play a game' + wantToPlayAGame + '?' + 'Please answer yes or no');
+function playGame(){
+  var wantToPlayAGame = prompt('Do you want to play a game ' + askName + '?' + ' Please answer yes or no.');
+  console.log('Do you want to play a game' + wantToPlayAGame + '?' + 'Please answer yes or no');
+}
+playGame()
 
 if(wantToPlayAGame.toLowerCase() === 'yes' || wantToPlayAGame === 'y'){
   alert('Awesome, let me ask you a few questions!');
