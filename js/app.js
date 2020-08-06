@@ -59,4 +59,38 @@ if(onlineSchooling.toLowerCase() === 'yes' || onlineSchooling === 'y'){
   alert('Please enter yes or no');
 }
 
+var number = 2;
+for(var i=0; i < 4; i++){
+  var tattoo = parseInt(prompt('How many tattoos does James have?'));
+  if (tattoo < number){
+    alert('You are so close, just a little higher.');
+  } else if (tattoo > number){
+    alert('Maybe someday, but guess again lower this time.');
+  } else if (tattoo === number){
+    alert('That is correct! (for now)');
+    break;
+  }
+  if (i === 3){
+    alert('You are out of guesses, the correct answer is 2');
+  }
+}
+
+var futureCountries = ['Brazil', 'Sweden', 'Croatia', 'Cuba'];
+for (var i = 0; i < 6; i++){
+  var whereIsCarmenSanDiego = prompt('Can you guess a country I would like to visit?');
+  var answeredCorrect = false;
+  // This loop only checks for correct answers.
+  for (var j = 0; j < futureCountries.length; j++){
+    if (futureCountries[j].toLowerCase() === whereIsCarmenSanDiego){
+      alert('You are correct! I would like to visit Thailand, Japan, Taiwan or Korea.');
+      answeredCorrect = true;
+    }
+  }
+  if (answeredCorrect === true){
+    break;
+  } else {
+    alert('You are incorrect. Please try again.');
+  }
+}
 alert('Thank you ' + askName + ', hope you learned a little about me.');
+
