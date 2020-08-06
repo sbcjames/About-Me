@@ -76,22 +76,24 @@ function study(){
 }
 study()
 
-
-var number = 2;
-for(var i=0; i < 4; i++){
-  var tattoo = parseInt(prompt('How many tattoos does James have?'));
-  if (tattoo < number){
-    alert('You are so close, just a little higher.');
-  } else if (tattoo > number){
-    alert('Maybe someday, but guess again lower this time.');
-  } else if (tattoo === number){
-    alert('That is correct! (for now)');
-    break;
-  }
-  if (i === 3){
-    alert('You are out of guesses, the correct answer is 2');
+function numberTattoo(){
+  var number = 2;
+  for(var i=0; i < 4; i++){
+    var tattoo = parseInt(prompt('How many tattoos does James have?'));
+    if (tattoo < number){
+      alert('You are so close, just a little higher.');
+    } else if (tattoo > number){
+      alert('Maybe someday, but guess again lower this time.');
+    } else if (tattoo === number){
+      alert('That is correct! (for now)');
+      break;
+    }
+    if (i === 3){
+      alert('You are out of guesses, the correct answer is 2');
+    }
   }
 }
+numberTattoo()
 
 var futureCountries = ['Brazil', 'Sweden', 'Croatia', 'Cuba'];
 for (var i = 0; i < 6; i++){
