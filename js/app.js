@@ -48,16 +48,19 @@ function movieStar(){
 }
 movieStar()
 
-var longestJob = prompt('Did James work at a job for over 8 years?');
-console.log('what was my longest job' + longestJob + '?');
+function longJob(){
+  var longestJob = prompt('Did James work at a job for over 8 years?');
+  console.log('what was my longest job' + longestJob + '?');
 
-if(longestJob.toLowerCase() === 'yes' || longestJob === 'y'){
-  alert('Correct! He worked for Verizon Wireless for almost 9 years (that is how he paid to complete college too).');
-}else if(longestJob.toLowerCase() === 'no' || longestJob === 'n'){
-  alert('So close, but actually almost 9 years at Verizon Wireless.');
-} else {
-  alert('Please enter yes or no');
+  if(longestJob.toLowerCase() === 'yes' || longestJob === 'y'){
+    alert('Correct! He worked for Verizon Wireless for almost 9 years (that is how he paid to complete college too).');
+  }else if(longestJob.toLowerCase() === 'no' || longestJob === 'n'){
+    alert('So close, but actually almost 9 years at Verizon Wireless.');
+  } else {
+    alert('Please enter yes or no');
+  }
 }
+longJob()
 
 var onlineSchooling = prompt('Did James study online before?');
 console.log('ever took online learning classes before' + onlineSchooling + '?');
