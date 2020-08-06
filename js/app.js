@@ -82,7 +82,7 @@ for (var i = 0; i < 6; i++){
   // This loop only checks for correct answers.
   for (var j = 0; j < futureCountries.length; j++){
     if (futureCountries[j].toLowerCase() === whereIsCarmenSanDiego){
-      alert('You are correct! I would like to visit Thailand, Japan, Taiwan or Korea.');
+      alert('You are correct! I want to visit Brazil, Croatia, Cuba, and even Sweden.');
       answeredCorrect = true;
     }
   }
