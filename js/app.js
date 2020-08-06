@@ -34,16 +34,19 @@ function famousFamily(){
 }
 famousFamily()
 
-var movieQuestion = prompt('Has James Swift stared in a movie?');
-console.log('find out if staring in movie' + movieQuestion + '?');
+function movieStar(){
+  var movieQuestion = prompt('Has James Swift stared in a movie?');
+  console.log('find out if staring in movie' + movieQuestion + '?');
 
-if(movieQuestion.toLowerCase() === 'yes' || movieQuestion === 'y'){
-  alert('Thank you, wish that was true, but I have been an extra - no words or special parts just hanging out in the background.');
-}else if(movieQuestion.toLowerCase() === 'no' || movieQuestion === 'n'){
-  alert('We must be freinds already, you are correct.');
-} else {
-  alert('Please enter yes or no');
+  if(movieQuestion.toLowerCase() === 'yes' || movieQuestion === 'y'){
+    alert('Thank you, wish that was true, but I have been an extra - no words or special parts just hanging out in the background.');
+  }else if(movieQuestion.toLowerCase() === 'no' || movieQuestion === 'n'){
+    alert('We must be freinds already, you are correct.');
+  } else {
+    alert('Please enter yes or no');
+  }
 }
+movieStar()
 
 var longestJob = prompt('Did James work at a job for over 8 years?');
 console.log('what was my longest job' + longestJob + '?');
