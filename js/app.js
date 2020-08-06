@@ -20,16 +20,19 @@ function playGame(){
 }
 playGame()
 
-var famousRelative = prompt('Is James Swift related to Taylor Swift?');
-console.log('Famous relative question' + famousRelative + '?');
+function famousFamily(){
+  var famousRelative = prompt('Is James Swift related to Taylor Swift?');
+  console.log('Famous relative question' + famousRelative + '?');
 
-if(famousRelative.toLowerCase() === 'yes' || famousRelative === 'y'){
-  alert('Nope, I actually don\'t like her music');
-}else if(famousRelative.toLowerCase() === 'no' || famousRelative === 'n'){
-  alert('You are correct! Way to go!');
-} else {
-  alert('Please enter yes or no');
+  if(famousRelative.toLowerCase() === 'yes' || famousRelative === 'y'){
+    alert('Nope, I actually don\'t like her music');
+  }else if(famousRelative.toLowerCase() === 'no' || famousRelative === 'n'){
+    alert('You are correct! Way to go!');
+  } else {
+    alert('Please enter yes or no');
+  }
 }
+famousFamily()
 
 var movieQuestion = prompt('Has James Swift stared in a movie?');
 console.log('find out if staring in movie' + movieQuestion + '?');
