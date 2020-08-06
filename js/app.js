@@ -95,22 +95,27 @@ function numberTattoo(){
 }
 numberTattoo()
 
-var futureCountries = ['Brazil', 'Sweden', 'Croatia', 'Cuba'];
-for (var i = 0; i < 6; i++){
-  var whereIsCarmenSanDiego = prompt('Can you guess a country I would like to visit?');
-  var answeredCorrect = false;
-  // This loop only checks for correct answers.
-  for (var j = 0; j < futureCountries.length; j++){
-    if (futureCountries[j].toLowerCase() === whereIsCarmenSanDiego){
-      alert('You are correct! I want to visit Brazil, Croatia, Cuba, and even Sweden.');
-      answeredCorrect = true;
+function countries(){
+
+  var futureCountries = ['Brazil', 'Sweden', 'Croatia', 'Cuba'];
+  for (var i = 0; i < 6; i++){
+    var whereIsCarmenSanDiego = prompt('Can you guess a country I would like to visit?');
+    var answeredCorrect = false;
+    // This loop only checks for correct answers.
+    for (var j = 0; j < futureCountries.length; j++){
+      if (futureCountries[j].toLowerCase() === whereIsCarmenSanDiego){
+        alert('You are correct! I want to visit Brazil, Croatia, Cuba, and even Sweden.');
+        answeredCorrect = true;
+      }
+    }
+    if (answeredCorrect === true){
+      break;
+    } else {
+      alert('You are incorrect. Please try again.');
     }
   }
-  if (answeredCorrect === true){
-    break;
-  } else {
-    alert('You are incorrect. Please try again.');
-  }
 }
+countries()
+
 alert('Thank you ' + askName + ', hope you learned a little about me.');
 
