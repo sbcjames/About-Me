@@ -62,16 +62,20 @@ function longJob(){
 }
 longJob()
 
-var onlineSchooling = prompt('Did James study online before?');
-console.log('ever took online learning classes before' + onlineSchooling + '?');
+function study(){
+  var onlineSchooling = prompt('Did James study online before?');
+  console.log('ever took online learning classes before' + onlineSchooling + '?');
 
-if(onlineSchooling.toLowerCase() === 'yes' || onlineSchooling === 'y'){
-  alert('Correct! Some of the classes he took were online since he worked full time and attended school at the same time.');
-}else if(onlineSchooling.toLowerCase() === 'no' || onlineSchooling === 'n'){
-  alert('Actually yes, he had too, worked full time and went to night school same time.');
-} else {
-  alert('Please enter yes or no');
+  if(onlineSchooling.toLowerCase() === 'yes' || onlineSchooling === 'y'){
+    alert('Correct! Some of the classes he took were online since he worked full time and attended school at the same time.');
+  }else if(onlineSchooling.toLowerCase() === 'no' || onlineSchooling === 'n'){
+    alert('Actually yes, he had too, worked full time and went to night school same time.');
+  } else {
+    alert('Please enter yes or no');
+    }
 }
+study()
+
 
 var number = 2;
 for(var i=0; i < 4; i++){
